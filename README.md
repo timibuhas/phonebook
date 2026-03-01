@@ -32,3 +32,4 @@ Proiectul a fost realizat pentru **proiectul de atestat** din clasa a 12-a
 
 ---
 ## Demo Video
+https://youtu.be/ixosgyJ-doQ
