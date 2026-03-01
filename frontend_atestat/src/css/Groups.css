@@ -1,0 +1,85 @@
+.group-contacts {
+    display: flex;
+    flex-direction: row;
+}
+
+.group-contacts h2 {
+    margin: 10px;
+}
+
+.groups {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.group {
+    transition: 0.3s ease;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    padding: 30px;
+    padding-top: 0;
+    background-color: white;
+}
+
+.group-header {
+
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.group-header h1 {
+    cursor: pointer;
+}
+
+.addGroup {
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.deleteGroup {
+    width: 30px;
+    height: 30px;
+    background-color: #ff847c;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 5px;
+    /*box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;*/
+}
+
+.addContactGroup {
+    width: 30px;
+    height: 30px;
+    background-color: #72CC50;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
+    /*box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;*/
+}
+
+.group-component {
+    padding: 10px;
+    margin: 10px;
+    animation: 0.5s fade-appear;
+}
+
+@keyframes fade-appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}

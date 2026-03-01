@@ -1,0 +1,102 @@
+.form-back {
+    position: fixed;
+    background: #00000050;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: 0.2s fade-appear;
+}
+
+.form {
+    background: #EEEEEE;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-end;
+    padding: 15px;
+}
+
+.form p {
+    margin: 5px;
+    color: black;
+}
+
+.form .inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-end;
+    padding: 20px;
+}
+
+.inputs input[type=submit] {
+    border-radius: 10px;
+    border: none;
+    background-color: #9ba6a5;
+    padding: 4px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-family: 'Poppins';
+    color: white;
+    font-weight: 500;
+}
+
+.inputs input[type=submit]:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.inputs p input[type=text] {
+    outline: none;
+    border: 1px solid black;
+    padding: 5px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.btn-close {
+    color: grey;
+    cursor: pointer;
+    background: none;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    font-family: 'Arial';
+    font-weight: 500;
+    transform: rotate(-45deg);
+    transition: 0.3s ease;
+}
+
+.btn-close:hover {
+    color: black;
+}
+
+.top {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.form-title {
+    left: 0;
+    margin: 0;
+}
+
+@keyframes fade-appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
